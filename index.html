@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greetings in Different Languages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .button {
+      position: absolute;
+      background-color: rgba(255,255,255,0.7);
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .button img {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://images.locationscout.net/2020/06/place-stanislas-france-ccpy.jpg?h=500&q=60" class="image" alt="Greetings Image">
+    
+    <!-- Buttons with audio -->
+    <div class="button" style="top: 10%; left: 60%;" onclick="playSound('https://voca.ro/11tF3N0lxGCR')">Français <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 20%; left: 70%;" onclick="playSound('https://voca.ro/1i7LDvlMDkhC')">Turc <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 30%; left: 50%;" onclick="playSound('https://voca.ro/11fPlieuQaDL')">Anglais <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 40%; left: 60%;" onclick="playSound('https://voca.ro/16WyuRMFyXdH')">Chinois <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 50%; left: 45%;" onclick="playSound('https://voca.ro/14YuMmdsRyzq')">Allemand <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 60%; left: 30%;" onclick="playSound('https://voca.ro/19DaDLxOiQ52')">Croate <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 70%; left: 50%;" onclick="playSound('https://voca.ro/1b9sXPMqhetd')">Persan <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 80%; left: 65%;" onclick="playSound('https://voca.ro/152hMWd7iQr3')">Espagnol <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 85%; left: 40%;" onclick="playSound('https://voca.ro/11WanR24fPTo')">Italien <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+    <div class="button" style="top: 90%; left: 55%;" onclick="playSound('https://voca.ro/1kn7YQYnB6cR')">Arabe <img src='https://cdn-icons-png.flaticon.com/512/727/727245.png'></div>
+  </div>
+
+  <audio id="player"></audio>
+
+  <script>
+    function playSound(url) {
+      const player = document.getElementById("player");
+      player.src = url;
+      player.play();
+    }
+  </script>
+</body>
+</html>
